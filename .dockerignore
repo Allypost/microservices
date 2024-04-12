@@ -1,0 +1,10 @@
+.git
+.gitignore
+
+./dist/
+
+.env
+
+Dockerfile
+.dockerignore
+compose.yaml
