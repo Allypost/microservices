@@ -73,7 +73,7 @@ func handleIp(w http.ResponseWriter, r *http.Request) {
 	case "application/json":
 		io.WriteString(w, fmt.Sprintf(`{"ip":"%s"}`, ip))
 	case "text/html":
-		io.WriteString(w, fmt.Sprintf(`Your IP address is: <pre>%s</pre>`, ip))
+		io.WriteString(w, fmt.Sprintf(`%s`, ip))
 	default:
 		io.WriteString(w, ip)
 	}
